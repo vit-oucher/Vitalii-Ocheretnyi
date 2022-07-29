@@ -146,4 +146,72 @@
 // console.log(y = b - g);
 // console.log(y = b - + g);
 
-// ================================ TAsk6 ==============================
+// ================================ Task6 ==============================
+//
+// let login = prompt("Enter Login: ",[]);
+// let password = prompt("Enter Password: ",[]);
+//
+// if (login === 'kykold',password === '1234asdQQ') {
+//      console.log(alert("Добро пожаловать!"))
+// }  else {
+//      console.log(alert("Ошибка входа!"))
+// };
+
+// ====================================== Task7 ================================
+//
+// let enterDate = + prompt("Введите год рождения", []);
+// console.log(birthDate = 2022 - enterDate);
+// if (birthDate >= 16) {alert("Добро пожаловать! " + "Вам " + birthDate + " лет")}
+// else {alert("Вход воспрещен! " + "Вам " + birthDate + " лет")};
+
+// ====================================== Task8 ================================
+
+// let stazh = + prompt("Введите Ваш стаж, лет:", []);
+// if (stazh <= 1) {alert("Работай больше");}
+// else if (stazh <= 3) {alert("Ваша надбавка " + "10%");}
+// else if (stazh <= 10) {alert("Ваша надбавка " + "20%");}
+// else if (stazh <= 20) {alert("Ваша надбавка " + "30%");}
+// else if (stazh <= 21 ) {alert("Ваша надбавка " + "50%");}
+// else {alert("Ваша надбавка " + "50%");};
+
+// ======================================= Task9 ================================
+
+// let numberOfDay = + prompt("Введите номер дня недели от 1 до 7:", []);
+
+// if (numberOfDay === 1) {alert("MONDAY");}
+// else if (numberOfDay === 2) {alert("TUESDAY");}
+// else if (numberOfDay === 3) {alert("WEDNESDAY");}
+// else if (numberOfDay === 4) {alert("THURSDAY");}
+// else if (numberOfDay === 5) {alert("FRIDAY");}
+// else if (numberOfDay === 6) {alert("SATURDAY");}
+// else if (numberOfDay === 7) {alert("SUNDAY");}
+// else {alert("Такого дня нет!");};
+
+// switch (numberOfDay) {
+//     case 1: alert("MONDAY");
+//     break;
+//     case 2: alert("TUESDAY");
+//     break;
+//     case 3: alert("WEDNESDAY");
+//     break;
+//     case 4: alert("THURSDAY");
+//     break;
+//     case 5: alert("FRIDAY");
+//     break;
+//     case 6: alert("SATURDAY");
+//     break;
+//     case 7: alert("SUNDAY");
+//     break;
+//     default: alert("Такого дня нет!");
+//     break;
+// }
+
+// numberOfDay === 1 ? (alert("MONDAY")):
+//     numberOfDay === 2 ? (alert("TUESDAY")):
+//         numberOfDay === 3 ? (alert("WEDNESDAY")):
+//             numberOfDay === 4 ? (alert("THURSDAY")):
+//                 numberOfDay === 5 ? (alert("FRIDAY")):
+//                     numberOfDay === 6 ? (alert("SATURDAY")):
+//                         numberOfDay === 7 ? (alert("SUNDAY")):
+//                            (alert("Такого дня нет!"));
+//
