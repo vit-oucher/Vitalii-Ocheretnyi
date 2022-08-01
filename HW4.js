@@ -46,6 +46,13 @@
 
 // ======================================= Task5 ==================================
 
-let arr = [1, 2, 3, 4, 5];
-let arr1 = [];
+// let arr = [1, 2, 3, 4, 5];
+// let arr1 = [];
+// let i2
+// for (i=1; i < arr.length+1; i++) {arr1.push(i2 = i*10).log};
+// console.log(arr1);
 
+// for (let elem of arr) {
+//     arr1.push(elem2 = elem * 10);
+// }
+// console.log(arr1);
