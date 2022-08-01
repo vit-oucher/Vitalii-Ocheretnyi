@@ -215,3 +215,110 @@
 //                         numberOfDay === 7 ? (alert("SUNDAY")):
 //                            (alert("Такого дня нет!"));
 //
+// ======================================= Task10 ================================
+//
+// let numInput = + prompt("Please input any number below", []);
+//
+// if (numInput < 0) {alert("-1");}
+// else if (numInput === 0) {alert("0");}
+// else  {alert("1")};
+
+// ======================================= Task11 ================================
+//
+// ==== Условие ===
+// let message;
+
+// if (login == 'Сотрудник') {
+//     message = 'Привет';
+// } else if (login == 'Директор') {
+//     message = 'Здравствуйте';
+// } else if (login == '') {
+//     message = 'Нет логина';
+// } else {
+//     message = '';
+// }
+
+// ====== Решение1 ====
+// let login = prompt("Введите логин", []);
+// login == 'Сотрудник' ? (alert(message = 'Привет')):
+//     login == 'Директор' ? (alert(message = 'Здравствуйте')):
+//         login == '' ? (alert(message = 'Нет логина')):
+//             alert(message = '');
+//
+//
+// ====== Решение2 ====
+// let message = (login == 'Сотрудник') ? 'Привет' :
+//     (login == 'Директор') ? 'Здравствуйте' :
+//         (login == '') ? 'Нет логина' :
+//             '';
+
+
+
+
+// ======================================= Task12 ================================
+//
+// let homeNumber = + prompt('Введите номер квартиры', []);
+// if (homeNumber >= 1 && homeNumber <= 20) {alert('1 подъезд');}
+// else if (homeNumber >= 21 && homeNumber <= 48) {alert('2 подъезд');}
+// else if (homeNumber >= 49 && homeNumber <= 90) {alert('3 подъезд');}
+// else {alert('Такой квартиры нет =)')};
+
+
+// ======================================= Task13 ================================
+// ======= Условие ========
+
+// switch (browser) {
+//     case 'Edge':
+//         alert( "You've got the Edge!" );
+//         break;
+//
+//     case 'Chrome':
+//     case 'Firefox':
+//     case 'Safari':
+//     case 'Opera':
+//         alert( 'Okay we support these browsers too' );
+//         break;
+//
+//     default:
+//         alert( 'We hope that this page looks ok!' );
+// }
+
+// ============== Решение ==================
+
+// let browser;
+// if (browser === 'Edge') {alert( "You've got the Edge!" );}
+// else if (browser === 'Chrome' || 'Firefox' || 'Safari' || 'Opera') { alert( 'Okay we support these browsers too' );}
+// else alert( 'We hope that this page looks ok!' );
+
+// ======================================= Task14 ================================
+
+// ============ Условие ==============
+const number = +prompt('Введите число между 0 и 3', '');
+
+// if (number === 0) {
+//     alert('Вы ввели число 0');
+// }
+//
+// if (number === 1) {
+//     alert('Вы ввели число 1');
+// }
+//
+// if (number === 2 || number === 3) {
+//     alert('Вы ввели число 2, а может и 3');
+// }
+
+
+// ============ Решение ===================
+
+// switch (number){
+//     case 0: alert('Вы ввели число 0');
+//     break;
+//     case 1:  alert('Вы ввели число 1');
+//     break;
+//     case 2:
+//     case 3: alert('Вы ввели число 2, а может и 3');
+//     break;
+//     default:
+//         '';
+//
+// }
