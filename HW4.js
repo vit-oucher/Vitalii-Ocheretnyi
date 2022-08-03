@@ -130,3 +130,57 @@
 // console.log(arr);
 
 // ======================================= Task14 ==================================
+
+// let arr1 = [];
+// for (let i=0; i<10; i++) {
+//     let arr2 = [];
+//     for (j=0; j<10; j++) {
+//         arr2.push(0);
+//         if (i === 0) {
+//             arr2[j] = 'x';
+//         }
+//         else if (i === 9) {
+//             arr2[j] = 'x';
+//         }
+//     }
+//     arr2[0] = 'x';
+//     arr2[9] = 'x';
+//     arr1.push(arr2);
+// }
+// console.log(arr1);
+
+// ======================================= Task15 ==================================
+//
+// let arr1 = [];
+// for (i=1; i<=10; i++) {
+//     let arr2 = [];
+//     for (j=1; j<=10; j++) {
+//
+//         arr2.push(j*i);
+//     }
+//     arr1.push(arr2);
+// }
+// console.log(arr1);
+
+// ======================================= Task16 ==================================
+
+let amountOfItems = + prompt("Введите количество:", []);
+let lastDidg = amountOfItems % 10;
+if (amountOfItems >= 10 && amountOfItems <=20 ) {
+    alert('В корзине ' + amountOfItems + ' товаров');
+}
+else
+switch (lastDidg) {
+    case 1: alert('В корзине ' + amountOfItems + ' товар');
+    break;
+    case 2:
+    case 3:
+    case 4: alert('В корзине ' + amountOfItems + ' товара');
+    break;
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9: alert('В корзине ' + amountOfItems + ' товаров');
+    break;
+}
