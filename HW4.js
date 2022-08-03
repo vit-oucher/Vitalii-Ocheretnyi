@@ -181,6 +181,7 @@ switch (lastDidg) {
     case 6:
     case 7:
     case 8:
-    case 9: alert('В корзине ' + amountOfItems + ' товаров');
+    case 9:
+    case 0: alert('В корзине ' + amountOfItems + ' товаров');
     break;
 }
