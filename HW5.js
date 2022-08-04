@@ -93,16 +93,49 @@
 // checkAge(age);
 
 // ======================================= Task7 ==================================
-//    ?????????????????????
-let age = + prompt('Введите свой возраст')
+//
+// ============================= Вариант решения 1 =========================
+//
+// let age = + prompt('Введите свой возраст')
+//
+// function checkAge(age) {
+//     if (age == undefined || age == NaN || age == 0){
+//         alert('Введите возраст')
+//     } else  if (age >= 16) {
+//         alert('Добро пожаловать!');
+//     } else {
+//         alert('Вы еще молоды!');
+//     }
+// }
+// checkAge(age);
 
-function checkAge(age) {
-    if (age == undefined || age == NaN || age == 0){
-        alert('Введите возраст')
-    } else  if (age >= 16) {
-        alert('Добро пожаловать!');
-    } else {
-        alert('Вы еще молоды!');
-    }
-}
-checkAge(age);
+// ============================= Вариант решения 2 =========================
+//
+// let age = prompt('Введите свой возраст');
+// if (age === '' || isNaN(age) || age === undefined) {
+//     alert('Вы ввели не число!');
+// } else {
+// function checkAge(age) {
+//     if (age >= 16) {
+//         alert('Добро пожаловать!');
+//     } else  if (age <= 0){
+//         alert('Вы ввели число меньше или равно 0!');
+//     } else {
+//         alert('Вы еще молоды!');
+//     }
+//     } checkAge(age);
+// }
+
+// ======================================= Task8 ==================================
+// ??????????????????????????????????
+// let str = prompt('Введите текст');
+//
+// function ucfirst(str) {
+//     if (!str) {return str;}
+//      else {
+//         return str(/(^\w{1})|(\s+\w{1})/g).toUpperCase();
+//     }
+//
+// }
+// console.log(ucfirst(str));
+// ucfirst(str);
