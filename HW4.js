@@ -163,25 +163,25 @@
 // console.log(arr1);
 
 // ======================================= Task16 ==================================
-
-let amountOfItems = + prompt("Введите количество:", []);
-let lastDidg = amountOfItems % 10;
-if (amountOfItems >= 10 && amountOfItems <=20 ) {
-    alert('В корзине ' + amountOfItems + ' товаров');
-}
-else
-switch (lastDidg) {
-    case 1: alert('В корзине ' + amountOfItems + ' товар');
-    break;
-    case 2:
-    case 3:
-    case 4: alert('В корзине ' + amountOfItems + ' товара');
-    break;
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-    case 0: alert('В корзине ' + amountOfItems + ' товаров');
-    break;
-}
+//
+// let amountOfItems = + prompt("Введите количество:", []);
+// let lastDidg = amountOfItems % 10;
+// if (amountOfItems >= 10 && amountOfItems <=20 ) {
+//     alert('В корзине ' + amountOfItems + ' товаров');
+// }
+// else
+// switch (lastDidg) {
+//     case 1: alert('В корзине ' + amountOfItems + ' товар');
+//     break;
+//     case 2:
+//     case 3:
+//     case 4: alert('В корзине ' + amountOfItems + ' товара');
+//     break;
+//     case 5:
+//     case 6:
+//     case 7:
+//     case 8:
+//     case 9:
+//     case 0: alert('В корзине ' + amountOfItems + ' товаров');
+//     break;
+// }
