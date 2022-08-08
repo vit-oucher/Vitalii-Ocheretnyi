@@ -154,7 +154,7 @@
 // }
 // let str = 'var_text_hello';
 // let arr = str.split('_');
-// for (let i = 1; i < arr.length; i++) {
+// for (let i = 0; i < arr.length; i++) {
 //     arr[i] = ucfirst1(arr[i]);
 // }
 // str = arr.join('');
