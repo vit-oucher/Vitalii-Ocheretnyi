@@ -127,15 +127,50 @@
 // }
 
 // ======================================= Task8 ==================================
-// ??????????????????????????????????
+//
 // let str = prompt('Введите текст');
+// let wordArr = str.split(' ');
 //
-// function ucfirst(str) {
-//     if (!str) {return str;}
-//      else {
-//         return str(/(^\w{1})|(\s+\w{1})/g).toUpperCase();
-//     }
-//
+// console.log(wordArr.map((word) => {
+//     return word[0].toUpperCase() + word.substring(1);
+// }).join(' '));
+
+// ========
+
+// function ucfirst (str) {
+//     return str[0].toUpperCase() + str.substring(1, str.length);
 // }
+// let str = prompt('Введите текст');
+// str = str.split(' ').map(function (i) {
+//     return ucfirst(i);
+// }).join(' ');
+//
 // console.log(ucfirst(str));
-// ucfirst(str);
+
+// ======================================= Task9 ==================================
+
+// function ucfirst1 (str) {
+//     return str[0].toUpperCase() + str.substring(1, str.length);
+// }
+// let str = 'var_text_hello';
+// let arr = str.split('_');
+// for (let i = 1; i < arr.length; i++) {
+//     arr[i] = ucfirst1(arr[i]);
+// }
+// str = arr.join('');
+//
+// console.log(ucfirst1(str));
+
+// ======================================= Task10 ==================================
+//
+// function inArrey (textInArray, array) {
+//     for (let i=0; i < array.length; i++) {
+//         if (textInArray === array[i]) {
+//             return true
+//         } else {
+//         };
+//     } return false ;
+// };
+// let textInArray = 'kpth';
+// let array = ['hgvjbhn', 'vjghk', 'kpth', 'tcfvghjb', '25988', 'cfvghjbn'];
+// console.log(inArrey(textInArray,array));
