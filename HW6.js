@@ -187,18 +187,6 @@ class HouseBuilder extends (Human) {
     };
 
 
-    // var sec = 262993;
-    // var min = sec / 60;
-    // var hour = min / 60;
-    // var day =
-    // 'Дней: ' + Math.floor(hour / 24) +
-    // ', часов: ' + Math.floor(hour % 24) +
-    // ', минут: ' + Math.floor(min % 60) +
-    // ', секунд: ' + Math.floor(sec % 60);
-    // alert(day);
-
-
-
 };
 
 let newHouseBuilder = new HouseBuilder(188,95, 'Rob', new Date('1985-12-05'), 'male', false, 'Kyiv', ['кирка', 'топор', 'кельма', 'руки)'],30);
