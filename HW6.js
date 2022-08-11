@@ -171,18 +171,19 @@ class HouseBuilder extends (Human) {
     building (kvm) {
         let time = (kvm * this.workSpeed);
         console.log(time);
-        if (time < 720) {
+        if (time < 1440) {
             let hours = + Math.trunc(time / 60);
             let min = time % 60;
 
             console.log(hours + ' ч. и ' + min + ' мин.');
         }
-        else if (time >= 720 && time < 5040) {
-            let days = + Math.trunc(time / 24)
-            let hours = + Math.trunc(days / 60);
+        else if (time >= 1440 && time < 10080) {
             let min = time % 60;
+            let hours = Math.trunc(time / 60) ;
+            let days = Math.trunc(hours / 24);
 
-            console.log(days + 'д.'+ hours +'ч. и ' + min + ' мин.');
+
+            console.log(days + ' д.' + hours + ' ч. и ' + min + ' мин.');
         }
     };
 
@@ -192,4 +193,4 @@ class HouseBuilder extends (Human) {
 let newHouseBuilder = new HouseBuilder(188,95, 'Rob', new Date('1985-12-05'), 'male', false, 'Kyiv', ['кирка', 'топор', 'кельма', 'руки)'],30);
 // console.log(newHouseBuilder);
 
-newHouseBuilder.building(50);
+newHouseBuilder.building(49);
