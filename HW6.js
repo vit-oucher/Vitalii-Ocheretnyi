@@ -165,26 +165,48 @@ class HouseBuilder extends (Human) {
         super(height, weight, name, dateOfBirth, gender, disablement);
         this.location = location;
         this.instruments = instruments;
-        this.workSpeed = workSpeed
+        this.workSpeed = workSpeed;
     };
 
     building (kvm) {
-        let time = (kvm * this.workSpeed);
+        let time = (this.workSpeed * kvm) / 60;
         console.log(time);
-        if (time < 1440) {
-            let hours = + Math.trunc(time / 60);
-            let min = time % 60;
-
-            console.log(hours + ' ч. и ' + min + ' мин.');
-        }
-        else if (time >= 1440 && time < 10080) {
-            let min = time % 60;
-            let hours = Math.trunc(time / 60) ;
-            let days = Math.trunc(hours / 24);
-
-
-            console.log(days + ' д.' + hours + ' ч. и ' + min + ' мин.');
-        }
+        let hours = 0;
+        let day = 0;
+        let week = 0;
+        let month = 0;
+        let year = 0;
+        if (time < 24) {
+            console.log(`Время стройки: ${time} часов.`)
+        } else if (time >= 24 && time < 168) {
+            day = Math.trunc(time/ 24);
+            hours = time - (Math.trunc(time/ 24) * 24);
+            console.log(`Время стройки:${day} д. и ${hours} ч.`)
+        } else if (time >= 168 && time < 730) {
+            day = Math.trunc(time/ 24);
+            week = Math.trunc(day/ 7);
+            hours = time - (Math.trunc(time/ 24) * 24);
+            let d1 = (day - (week * 7));
+            console.log(`Время стройки:${week} н., ${d1} д. и ${hours} ч.`);
+        } else if (time >= 730 && time < 8760) {
+            day = Math.trunc(time/ 24);
+            week = Math.trunc(day/ 7);
+            hours = time - (Math.trunc(time/ 24) * 24);
+            let d1 = (day - (week * 7));
+            month = Math.trunc(day/30);
+            let w1 = (week-(month*4));
+            console.log(`Время стройки:${month} м., ${w1} н., ${d1} д. и ${hours} ч.`);
+        } else if (time > 8760) {
+            day = Math.trunc(time/ 24);
+            week = Math.trunc(day/ 7);
+            hours = time - (Math.trunc(time/ 24) * 24);
+            let d1 = (day - (week * 7));
+            month = Math.trunc(day/30);
+            year = Math.trunc(day/365);
+            let m1 = (month - (year*12));
+            if (m1 < 12) { m1 = m1} else if (m1 >= 12) {m1= m1-12; year = year+1};
+            console.log(`Время стройки:${year} г., ${m1} м., ${d1} д. и ${hours} ч.`);
+        } else {};
     };
 
 
@@ -193,4 +215,4 @@ class HouseBuilder extends (Human) {
 let newHouseBuilder = new HouseBuilder(188,95, 'Rob', new Date('1985-12-05'), 'male', false, 'Kyiv', ['кирка', 'топор', 'кельма', 'руки)'],30);
 // console.log(newHouseBuilder);
 
-newHouseBuilder.building(49);
+newHouseBuilder.building(75000);
