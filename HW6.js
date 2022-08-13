@@ -1,9 +1,9 @@
-// ========================== 1.1 ========================================
-// let start = '';
-// let end = '';
-// let salaryPerMonth = 0;
-// let position = '';
-// let companyName = '';
+//========================== 1.1 ========================================
+let start = '';
+let end = '';
+let salaryPerMonth = 0;
+let position = '';
+let companyName = '';
 let work = [
     {
         start: new Date ('2019-3-11'),
@@ -85,12 +85,12 @@ get getInfo () {
     console.log('Info about human ', info);
 }
 }
-// let firstHuman = new Human(185,100,'Vit', new Date("1996-2-25"),'male',false);
-// console.log(firstHuman);
-// firstHuman.getHello;
-// firstHuman.setNewName = 'taras';
-// firstHuman.setDisablementStatus = true;
-// firstHuman.getInfo;
+let firstHuman = new Human(185,100,'Vit', new Date("1996-2-25"),'male',false);
+console.log(firstHuman);
+firstHuman.getHello;
+firstHuman.setNewName = 'taras';
+firstHuman.setDisablementStatus = true;
+firstHuman.getInfo;
 
 // ========================== 1.2 /// 1.3 ========================================
 
@@ -121,7 +121,7 @@ set totalSel (k) {
             for (let j=0; j< money.length; j++){
                 l += money[j];
             }
-            console.log(l);
+            console.log('заработал:', l);
 
         };
     getCompanyName(companyNameFind) {
@@ -148,17 +148,17 @@ set totalSel (k) {
 
 
 let secondHuman = new FrontEndDev (196, 95, 'Ihor', new Date('1998-06-05'), 'male',false, work[0].start, work[3].companyName);
-// secondHuman.totalSel = work;
+secondHuman.totalSel = work;
 
-// console.log(secondHuman);
+console.log(secondHuman);
 
-// secondHuman.getHelloFrEnd;
+secondHuman.getHelloFrEnd;
 
-// secondHuman.newCompany(new Date('2021-11-23'), new Date('2022-03-25'), 964, 'senior', 'trd6');
-// secondHuman.getCompanyName('trd6');
+secondHuman.newCompany(new Date('2021-11-23'), new Date('2022-03-25'), 964, 'senior', 'trd6');
+secondHuman.getCompanyName('trd6');
 
 
-
+// ============================================ 1.2 // 1.4 ===================================================================
 
 class HouseBuilder extends (Human) {
     constructor(height, weight, name, dateOfBirth, gender, disablement, location, instruments, workSpeed) {
@@ -167,10 +167,10 @@ class HouseBuilder extends (Human) {
         this.instruments = instruments;
         this.workSpeed = workSpeed;
     };
-
+// ===================================== моё решение ====================================================
     building (kvm) {
         let time = (this.workSpeed * kvm) / 60;
-        console.log(time);
+        // console.log(time);
         let hours = 0;
         let day = 0;
         let week = 0;
@@ -208,11 +208,50 @@ class HouseBuilder extends (Human) {
             console.log(`Время стройки:${year} г., ${m1} м., ${d1} д. и ${hours} ч.`);
         } else {};
     };
-
-
+// ===================================== пример ====================================================
+    // bildinHouse(kvm) {
+    //     let hourOfWOrk = (this.workSpeed * kvm) / 60;
+    //
+    //     let day = 0;
+    //     let week = 0;
+    //     let month = 0;
+    //     let year = 0;
+    //
+    //     if (hourOfWOrk < 24) {
+    //         console.log(`На стройку уйдет ${hourOfWOrk} часов !`);
+    //     } else if (hourOfWOrk >= 24 && hourOfWOrk <= 168) {
+    //         day = (hourOfWOrk / 24).toString();
+    //
+    //         hourOfWOrk = day[2] || 0;
+    //
+    //         console.log(`На стройку уйдет ${parseInt(day)} дней и ${hourOfWOrk} часов!`);
+    //     } else if (hourOfWOrk >= 168 && hourOfWOrk < 730) {
+    //         week = (hourOfWOrk / 168).toString();
+    //
+    //         day = week[2];
+    //         hourOfWOrk = week[3];
+    //         console.log(`На стройку уйдет ${parseInt(week)} недель, ${day} дней и ${hourOfWOrk} часов!`);
+    //     } else if ( hourOfWOrk >= 730 && hourOfWOrk < 8760) {
+    //         month = (hourOfWOrk / 730).toString();
+    //         week = month[2];
+    //         day = month[3];
+    //         hourOfWOrk = month[4];
+    //
+    //         console.log(`На стройку уйдет ${parseInt(month)} месяцев, ${week} недель, ${day} дней и ${hourOfWOrk} часов!`);
+    //     } else  {
+    //         year = (hourOfWOrk / 8760).toString()
+    //         month = year[2];
+    //         week = year[3];
+    //         day = year [4];
+    //         hourOfWOrk = year[5];
+    //         console.log(`На стройку уйдет ${parseInt(year)} лет, ${month} месяцев, ${week} недель, ${day} дней и ${hourOfWOrk} часов!`);
+    //     };
+    // };
+// ===========================================================================================================================================
 };
 
 let newHouseBuilder = new HouseBuilder(188,95, 'Rob', new Date('1985-12-05'), 'male', false, 'Kyiv', ['кирка', 'топор', 'кельма', 'руки)'],30);
-// console.log(newHouseBuilder);
+console.log(newHouseBuilder);
 
 newHouseBuilder.building(75000);
+// newHouseBuilder.bildinHouse(75000);
