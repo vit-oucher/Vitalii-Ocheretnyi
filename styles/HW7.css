@@ -1,0 +1,279 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: dimgray;        /* color of the tracking area */
+    border: 3px solid #808080;
+    width: 12px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    width: 7px;
+    background-color: #1A191926;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid #000000;  /* creates padding around scroll thumb */
+
+}
+::-webkit-scrollbar-thumb:hover {
+    background: dimgray;
+}
+
+.conteinerFull {
+    width: 1400px;
+    min-height: 1220px;
+    margin: 0 auto;
+    display: flex;
+    background: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contOfBlocks {
+
+}
+
+.block-1 {
+    position: absolute;
+    width: 137px;
+    height: 137px;
+    margin-top: 70px;
+    margin-left: 75px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+}
+
+.block-2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-top: 25px;
+    margin-left: 730px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+}
+
+.block-3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: 70px;
+    margin-left: 1135px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+}
+
+.block-4 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-top: 485px;
+    margin-left: 365px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+}
+
+.block-5 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-top: 485px;
+    margin-left: 895px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+}
+
+.block-6 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: 45px;
+    margin-left: 455px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+}
+
+.block-7 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: 295px;
+    margin-left: 1135px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+}
+.block-8 {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    margin-top: 455px;
+    margin-left: 1215px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+}
+
+.block-9 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 335px;
+    margin-left: 238px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+}
+
+.block-10 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-top: 455px;
+    margin-left: 90px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+}
+
+.btn {
+    position: absolute;
+    width: 264px;
+    height: 73px;
+    margin-top: 270px;
+    margin-left: 570px;
+    background: #FFFFFF;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+    cursor: pointer;
+}
+.NFT {
+    color: #750505;
+}
+
+.picsConteiner {
+    position: relative;
+    display: flex;
+    width: 1400px;
+    height: 600px;
+    flex-wrap: wrap;
+    top: 620px;
+    overflow: auto;
+}
+
+.card {
+    position: relative;
+    width: 178px;
+    height: 251px;
+    margin-right: 45px;
+    margin-bottom: 35px;
+    border: 1px solid #3E3E3E;
+    background: #3E3E3E;
+    border-radius: 12px;
+    top: 15px;
+    left: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+.card:hover {
+    cursor: pointer;
+    width: 178px;
+    height: 300px;
+    transition: all 150ms ease;
+
+}
+.card:hover .btn-del{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    width: 178px;
+    height: 30px;
+    border: 1px solid #2f2e2e;
+    background: #2f2e2e;
+    border-radius: 12px;
+    top: 260px;
+
+}
+
+img {
+    width: 165px;
+    height: 195px;
+    margin-top: 6.44px;
+    margin-left: 6.72px;
+    object-fit:cover;
+    border-radius: 10px;
+    background-position:center center;
+    background-size:cover;
+}
+
+.cardName {
+    position: absolute;
+    left: 16.8px;
+    right:83.1px ;
+    top: 16.1px;
+    bottom: 215.6px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    color: #c2c2c2;
+}
+
+.cardDescription {
+    position: absolute;
+    left: 16.8px;
+    right: 55.4px;
+    top: 180.2px;
+    bottom: 16.1px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    /*display: flex;*/
+    /*align-items: flex-end;*/
+    letter-spacing: -0.04em;
+    color: #c2c2c2;
+}
+
+.btn-del {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 5px;
+    width: 178px;
+    height: 50px;
+    background: #FFFFFF;
+    top: 247px;
+
+}
