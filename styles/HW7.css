@@ -212,12 +212,11 @@
     position: absolute;
     cursor: pointer;
     width: 178px;
-    height: 50px;
+    height: 30px;
     border: 1px solid #2f2e2e;
     background: #2f2e2e;
     border-radius: 12px;
-    top: 240px;
-    z-index: 50;
+    top: 260px;
 
 }
 
@@ -264,7 +263,6 @@ img {
     /*align-items: flex-end;*/
     letter-spacing: -0.04em;
     color: #c2c2c2;
-    z-index: 100;
 }
 
 .btn-del {
